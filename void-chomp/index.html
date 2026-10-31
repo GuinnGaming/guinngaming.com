@@ -35,8 +35,8 @@
     <div class="wrap hero-grid">
       <div>
         <h1 class="logo game-logo">Void Chomp</h1>
-        <p class="tagline">Hole Lotta Snacks. Eat it all, grow bigger.</p>
-        <p class="lead">You're the Void, a hungry monster mouth. Start tiny, swallow crumbs and candy, then grow big enough to gulp down donuts, toys, books and more. Clear every goal before the timer runs out!</p>
+        <p class="tagline">Hole Lotta Snacks! Eat it all, grow bigger.</p>
+        <p class="lead">You're the Void, a hungry little monster with a bottomless appetite. Chomp crumbs, candy and cookies, grow bigger with every bite, and work your way up to donuts, toys and books. Clear every goal before the timer runs out, then unlock new monsters and skins.</p>
         <div class="btn-row">
           <!-- PLAY BUTTON: at launch replace this <span> with
                <a class="play-badge" href="https://play.google.com/store/apps/details?id=com.guinngaming.voidchomp"> ... Get it on Google Play ... </a> -->
@@ -48,7 +48,7 @@
         <p style="margin-top:14px;color:var(--muted);font-size:.95rem">Free to play &middot; Android &middot; Ages 13+</p>
       </div>
       <div class="phone">
-        <img src="img/shot-hub.webp" width="540" height="960" alt="The Den hub screen: a monster mouth swirling with snacks, a big Play button, and Customize, Inventory, Store and Free Rewards buttons" fetchpriority="high">
+        <img src="img/shot-gulp.webp" width="540" height="960" alt="A teal monster mouth chomping its way across a picnic blanket" fetchpriority="high">
       </div>
     </div>
   </section>
@@ -86,11 +86,11 @@
 
   <section class="section-alt">
     <div class="wrap split reverse">
-      <div class="phone"><img src="img/shot-monsters.webp" width="540" height="960" alt="Monster select screen showing Chomper, Goofball, Jaws and Xeno with rows of color skins" loading="lazy"></div>
+      <div><img src="img/monsters-chomper-kraken.webp" width="540" height="270" alt="Chomper, the teal starter monster, next to the purple, tentacled Kraken" loading="lazy" style="max-width:min(540px,100%);margin:0 auto;border-radius:16px;border:2px solid rgba(46,230,214,.35)"></div>
       <div>
         <h2>Pick your monster</h2>
-        <p>Unlock <strong>Chomper</strong>, <strong>Goofball</strong>, <strong>Jaws</strong> and <strong>Xeno</strong>, each with its own lips, teeth and glowing eyes. Then paint them in a rainbow of colors and special skins.</p>
-        <p>Collect them with coins you earn by playing, or grab them in the Store.</p>
+        <p>Start as <strong>Chomper</strong>, then unlock <strong>Goofball</strong> and <strong>Xeno</strong>, each with its own lips, teeth and glowing eyes, and paint them in a rainbow of colors. Beat level 10 and the <strong>Kraken</strong> bursts out of the treasure chest.</p>
+        <p>Unlock them with coins you earn by playing.</p>
       </div>
     </div>
   </section>
@@ -99,49 +99,35 @@
     <div class="wrap">
       <h2>Power up</h2>
       <p class="lead">Pick up to 3 power-ups for every run.</p>
-      <div class="grid powers">
-        <figure><img src="img/power-magnet.webp" width="320" height="320" alt="Magnet power-up pulling food toward the mouth" loading="lazy"><figcaption>Magnet<span>Pull food in from farther away</span></figcaption></figure>
-        <figure><img src="img/power-grow.webp" width="320" height="320" alt="Grow power-up burst around the mouth" loading="lazy"><figcaption>Grow<span>An instant size boost</span></figcaption></figure>
-        <figure><img src="img/power-time.webp" width="320" height="320" alt="Plus Time power-up adding seconds" loading="lazy"><figcaption>+Time<span>Extra seconds on the clock</span></figcaption></figure>
-        <figure><img src="img/power-shield.webp" width="320" height="320" alt="Light-blue hexagon Shield dome over the mouth" loading="lazy"><figcaption>Shield<span>Bombs bounce off for 10 seconds</span></figcaption></figure>
-      </div>
+      <ul class="ticks">
+        <li><strong>Snack Snag:</strong> pull food in from farther away.</li>
+        <li><strong>Belly Boost:</strong> an instant size boost.</li>
+        <li><strong>Snack Time:</strong> extra seconds on the clock.</li>
+        <li><strong>Shield:</strong> bombs bounce off for 10 seconds.</li>
+      </ul>
     </div>
   </section>
 
-  <section id="events" class="section-alt">
-    <div class="wrap split">
-      <div class="phone"><img src="img/shot-boss.webp" width="540" height="960" alt="The Pumpkin King event boss battle" loading="lazy"></div>
-      <div>
-        <h2>Giant bosses and events</h2>
-        <p>Event levels end in giant boss fights. Dodge their telegraphed slams, keep chipping away and win big coin rewards.</p>
-        <p>Check the <strong>Events</strong> tab for limited-time holiday events with their own levels, a special boss and exclusive skins you can only win while the event is on. Events like <strong>Monster Mash</strong>, a Halloween event with three spooky stages and the Pumpkin King, come and go through the year.</p>
-        <img src="img/shot-events.webp" width="540" height="675" alt="Events screen listing the Monster Mash stages and an upcoming Winter Wonderland event" loading="lazy" style="max-width:min(320px,100%);border-radius:16px;border:2px solid rgba(46,230,214,.35)">
-      </div>
-    </div>
-  </section>
 
-  <section id="store">
-    <div class="wrap split reverse">
-      <div><img src="img/shot-store.webp" width="540" height="518" alt="Store screen with skin offers such as Neon Glow, Rainbow Swirl and Galaxy" loading="lazy" style="max-width:min(380px,100%);margin:0 auto;border-radius:16px;border:2px solid rgba(46,230,214,.35)"></div>
+  <section id="store" class="section-alt">
+    <div class="wrap">
       <div>
         <h2>Fair and free to play</h2>
-        <p>Every level can be beaten without paying. Lives refill on their own over time, and you can earn free coins, power-ups and extra lives from the Free Rewards screen.</p>
-        <p>The optional Store has coin packs, skins, power-up bundles, a Remove Ads option and the Monster Pass for players who want a boost. You can choose personalized or non-personalized ads in <strong>Settings &rsaquo; Privacy &amp; Ads</strong>.</p>
+        <p>Every level can be beaten without paying. Lives refill on their own over time, one every 5 minutes, and winning a level never costs a life.</p>
+        <p>Earn coins as you play, then spend them on new monsters, colors and power-ups.</p>
       </div>
     </div>
   </section>
 
-  <section id="shots" class="section-alt">
+  <section id="shots">
     <div class="wrap">
       <h2>Screenshots</h2>
       <p class="lead">Swipe or scroll sideways to see more.</p>
       <div class="strip" tabindex="0" role="region" aria-label="Screenshots, scroll sideways">
-        <figure><img src="img/shot-gulp.webp" width="540" height="960" alt="Mid-gulp on the picnic blanket" loading="lazy"><figcaption>Mid-gulp</figcaption></figure>
+        <figure><img src="img/shot-vacuum.webp" width="540" height="960" alt="Food pulled toward the monster mouth" loading="lazy"><figcaption>Snack chain</figcaption></figure>
         <figure><img src="img/shot-shield.webp" width="540" height="960" alt="Shield dome over the monster mouth" loading="lazy"><figcaption>Shield dome</figcaption></figure>
         <figure><img src="img/shot-levels.webp" width="540" height="960" alt="Level select with the six worlds" loading="lazy"><figcaption>Level select</figcaption></figure>
-        <figure><img src="img/shot-halloween.webp" width="540" height="960" alt="Halloween event level" loading="lazy"><figcaption>Monster Mash event</figcaption></figure>
         <figure><img src="img/shot-bomb.webp" width="540" height="960" alt="Pushing a bomb away from the mouth" loading="lazy"><figcaption>Dodge the bombs</figcaption></figure>
-        <figure><img src="img/shot-monsters.webp" width="540" height="960" alt="Monster select screen" loading="lazy"><figcaption>Monsters and skins</figcaption></figure>
       </div>
     </div>
   </section>
@@ -151,7 +137,7 @@
 
 <footer class="site-footer">
   <div class="wrap">
-    <p style="margin:0">Free to play with optional in-app purchases and ads. Rated for ages 13+.</p>
+    <p style="margin:0">Free to play. Rated for ages 13+.</p>
     <nav aria-label="Footer">
       <a href="../">GuinnGaming</a>
       <a href="privacy/">Privacy Policy</a>
