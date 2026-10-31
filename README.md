@@ -8,22 +8,26 @@ Fonts (Creepster for logos, Nunito for text) load from Google Fonts.
 | Path | Page |
 |---|---|
 | `index.html` | Studio home: hero, **Our games** grid, About, Contact |
-| `fill-the-void/index.html` | Fill The Void game page |
-| `fill-the-void/privacy/index.html` | Fill The Void privacy policy (the URL to give Play Console) |
+| `void-chomp/index.html` | Void Chomp: Hole Lotta Snacks game page |
+| `void-chomp/privacy/index.html` | Void Chomp privacy policy (the URL to give Play Console) |
 | `404.html` | Not-found page (GitHub Pages serves it automatically) |
 | `assets/css/style.css` | Shared styles for every page |
-| `assets/img/` | Favicon, touch icon, Fill The Void icon |
-| `fill-the-void/img/` | Game screenshots (WebP) |
+| `assets/img/` | Favicon, touch icon, Void Chomp icon |
+| `void-chomp/img/` | Game screenshots (WebP) |
 | `_template/game/` | Copy-me template for a new game page + privacy policy |
 
 ## Publishing (GitHub Pages)
 
 - Repo: `GuinnGaming/guinngaming.com`, published from branch `main`, folder `/` (root).
 - Custom domain: `guinngaming.com` (set by the `CNAME` file). DNS is managed at Porkbun.
-- Fill The Void privacy policy (the URL for Play Console): `https://guinngaming.com/fill-the-void/privacy/`
+- Void Chomp privacy policy (the URL for Play Console): `https://guinngaming.com/void-chomp/privacy/`
 - Pushing to `main` republishes the site automatically.
 
 Notes:
+- **Old addresses:** the game was renamed from Fill The Void to Void Chomp: Hole Lotta Snacks, and its pages
+  moved from `/fill-the-void/` to `/void-chomp/`. `fill-the-void/index.html` and
+  `fill-the-void/privacy/index.html` are tiny redirect pages (meta refresh + canonical + JS) so old links keep
+  working. GitHub Pages has no server-side redirects (`_redirects` files are ignored), so keep these files.
 - `.nojekyll` is present, so files are served exactly as committed (including `_template/` and this
   README). `robots.txt` asks search engines to skip them.
 - `404.html` uses root paths (`/...`), which is correct for a custom-domain site.
@@ -42,18 +46,18 @@ already in Play Console keep working.
    ~78, under ~80 KB each) and swap them in for `img/placeholder.svg`. Delete `placeholder.svg` when done.
    Quick conversion: `cwebp -q 78 -resize 540 960 in.png -o img/shot-1.webp`
    (or Python Pillow: `Image.open(p).resize((540,960)).save(out, 'WEBP', quality=78)`).
-4. **Write its privacy policy:** edit `space-snacks/privacy/index.html`. Start from the Fill The Void
+4. **Write its privacy policy:** edit `space-snacks/privacy/index.html`. Start from the Void Chomp
    policy and change anything that differs (ad SDKs, purchases, age rating, date).
 5. **Add the card:** in `index.html`, copy the `<article class="card game-card">` block between the
    `GAME CARD` comments, paste it at the top of the grid (newest first), and change the image, icon,
-   name, one-line pitch, badge text and link. Badge options: `Coming soon to Google Play`,
+   name, one-line pitch, badge text and link. Badge options: `Coming to Android`,
    `Join the test`, `Get it on Google Play`.
 6. Optionally add the game to the footer links, then commit and push.
 
-## At launch (Fill The Void)
+## At launch (Void Chomp)
 
-- In `fill-the-void/index.html`, replace the "Coming soon" `<span class="play-badge">` with a link to
-  `https://play.google.com/store/apps/details?id=com.dutrut.fillthevoid` (instructions are in the HTML comment).
+- In `void-chomp/index.html`, replace the "Coming to Android" `<span class="play-badge">` with a link to
+  `https://play.google.com/store/apps/details?id=com.guinngaming.voidchomp` (instructions are in the HTML comment).
 - Change the home card badge to `Get it on Google Play`.
 
 ## Still to fill in
