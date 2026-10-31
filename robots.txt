@@ -1,3 +1,4 @@
 User-agent: *
-Disallow: /_template/
-Disallow: /README.md
+Allow: /
+
+Sitemap: https://guinngaming.com/sitemap.xml
