@@ -16,23 +16,17 @@ Fonts (Creepster for logos, Nunito for text) load from Google Fonts.
 | `fill-the-void/img/` | Game screenshots (WebP) |
 | `_template/game/` | Copy-me template for a new game page + privacy policy |
 
-## Publishing on GitHub Pages (later, with your own sign-in)
+## Publishing (GitHub Pages)
 
-1. Create a GitHub account (e.g. `GuinnGaming`).
-2. Create a repository named exactly `<username>.github.io` (e.g. `guinngaming.github.io`).
-3. Push this folder to it. In the repo: **Settings > Pages > Deploy from a branch > main / (root)**.
-4. The site appears at `https://<username>.github.io/`, and the privacy policy at
-   `https://<username>.github.io/fill-the-void/privacy/`.
-5. Put that privacy URL into Play Console and into section 10 of the policy, then delete the
-   yellow "Review before publishing" note at the top of the policy page.
+- Repo: `GuinnGaming/guinngaming.com`, published from branch `main`, folder `/` (root).
+- Custom domain: `guinngaming.com` (set by the `CNAME` file). DNS is managed at Porkbun.
+- Fill The Void privacy policy (the URL for Play Console): `https://guinngaming.com/fill-the-void/privacy/`
+- Pushing to `main` republishes the site automatically.
 
 Notes:
-- Pages link to each other with relative paths, so they also work when opened as local files.
-  `404.html` uses root paths (`/...`), which is correct for a `<username>.github.io` site.
-  (If you ever host it as a project site like `/<repo>/` instead, update the links in `404.html`.)
-- Folders starting with `_` (like `_template/`) are **not published** by GitHub Pages' default
-  Jekyll step, so the template stays private. Don't add a `.nojekyll` file unless you want it public.
-- A custom domain (e.g. `guinngaming.com`) can be added later under Settings > Pages.
+- `.nojekyll` is present, so files are served exactly as committed (including `_template/` and this
+  README). `robots.txt` asks search engines to skip them.
+- `404.html` uses root paths (`/...`), which is correct for a custom-domain site.
 
 ## Adding a new game
 
@@ -64,7 +58,6 @@ already in Play Console keep working.
 
 ## Still to fill in
 
-- Final privacy policy URL (section 10) once the GitHub username is known.
 - Postal address in the policy contact section, if required.
 - Social links in the footers once the accounts exist.
 - Trailer embed on the game page (optional).
