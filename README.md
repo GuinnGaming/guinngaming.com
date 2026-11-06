@@ -10,6 +10,7 @@ Fonts (Creepster for logos, Nunito for text) load from Google Fonts.
 | `index.html` | Studio home: hero, **Our games** grid, About, Contact |
 | `void-chomp/index.html` | Void Chomp: Hole Lotta Snacks game page |
 | `void-chomp/privacy/index.html` | Void Chomp privacy policy (the URL to give Play Console) |
+| `store/index.html` | Merch Store tab: links out to the Fourthwall shop (guinngaming-shop.fourthwall.com); no JS, no embeds, no trackers |
 | `404.html` | Not-found page (GitHub Pages serves it automatically) |
 | `assets/css/style.css` | Shared styles for every page |
 | `assets/img/` | Favicon, touch icon, Void Chomp icon |
