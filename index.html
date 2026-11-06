@@ -4,105 +4,141 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>GuinnGaming | Small studio, big appetite</title>
-<meta name="description" content="GuinnGaming is an independent mobile game studio. Our first game, Void Chomp: Hole Lotta Snacks, is coming to Android.">
+<meta name="description" content="GuinnGaming is an independent game studio. Void Chomp: Hole Lotta Snacks is coming soon to Google Play, and Dent Collector, our next game, is in development.">
   <link rel="canonical" href="https://guinngaming.com/">
-<meta name="theme-color" content="#101830">
+<meta name="theme-color" content="#111115">
 <meta property="og:title" content="GuinnGaming">
 <meta property="og:description" content="Small studio, big appetite. We make fun, bite-sized mobile games.">
 <meta property="og:type" content="website">
-<link rel="icon" href="favicon.ico" sizes="any">
-<link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
-<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="icon" href="assets/img/gg-favicon.ico" sizes="any">
+<link rel="icon" href="assets/img/gg-favicon-32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="assets/img/gg-favicon-64.png" type="image/png" sizes="64x64">
+<link rel="apple-touch-icon" href="assets/img/gg-apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Creepster&family=Nunito:wght@400;600;700;800;900&display=swap">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class="home">
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="./" aria-label="GuinnGaming home"><img src="assets/img/favicon-32.png" alt="" width="34" height="34"><span>Guinn<b>Gaming</b></span></a>
+    <a class="brand" href="./" aria-label="GuinnGaming home"><img src="assets/img/gg-mark.png" srcset="assets/img/gg-mark.png 2x, assets/img/gg-mark@2x.png 4x" alt="" width="34" height="34"><span>Guinn<b>Gaming</b></span></a>
     <nav aria-label="Main"><ul class="nav">
       <li><a href="#games">Games</a></li>
       <li><a href="store/">Store</a></li>
-      <li><a href="void-chomp/privacy/">Privacy</a></li>
       <li><a href="#contact">Contact</a></li>
+      <li><a href="void-chomp/privacy/">Privacy</a></li>
     </ul></nav>
   </div>
 </header>
 
 <main id="main">
-  <section class="hero">
+  <section class="hero home-hero">
     <div class="wrap hero-grid">
       <div>
-        <h1 class="logo game-logo" style="color:var(--gold);text-shadow:0 3px 0 #6b4a00,0 0 18px rgba(245,197,66,.35)">GuinnGaming</h1>
+        <span class="eyebrow">Independent game studio</span>
+        <h1>GuinnGaming</h1>
         <p class="tagline">Small studio, big appetite.</p>
-        <p class="lead">We make fun, bite-sized mobile games. Our first one is a hungry monster mouth that wants to eat everything in sight.</p>
+        <p class="lead">We make colorful, easy-to-pick-up games that are fair to play. Void Chomp is coming soon to Google Play, and our next game, Dent Collector, is in development.</p>
         <div class="btn-row">
-          <a class="btn btn-lime" href="void-chomp/">See Void Chomp &rarr;</a>
-          <a class="btn btn-ghost" href="#games">All games</a>
+          <a class="btn btn-primary" href="#games">Explore our games &rarr;</a>
         </div>
       </div>
       <div class="phone">
-        <img src="void-chomp/img/shot-title.webp" width="540" height="960" alt="Void Chomp title screen: the game logo above a swirling monster den full of snacks, with a big green Start button">
+        <img src="void-chomp/img/shot-hub.webp" width="540" height="960" alt="Void Chomp main screen: The Den, a swirling monster den full of snacks, with a big green Play button">
       </div>
     </div>
   </section>
 
   <section id="games" class="section-alt">
     <div class="wrap">
-      <h2>Our games</h2>
-      <p class="lead">Everything we've made (and are making). New games show up here first.</p>
-      <div class="grid games-grid">
-        <!-- GAME CARD: copy this <article> block for each new game (newest first). See README.md. -->
-        <article class="card game-card">
-          <img class="shot" src="void-chomp/img/card.webp" width="640" height="360" alt="A teal monster mouth gulping food on a picnic blanket" loading="lazy">
-          <div class="thumb">
-            <img src="assets/img/void-chomp-icon.webp" width="72" height="72" alt="">
-            <div>
-              <h3>Void Chomp: Hole Lotta Snacks</h3>
-              <span class="badge">Coming to Android</span>
-            </div>
-          </div>
-          <div class="card-body">
+      <span class="eyebrow">Our lineup</span>
+      <h2>Games and shows</h2>
+      <p class="lead">What we're making now, what's next, and where it's headed.</p>
+      <div class="grid lineup">
+        <article class="title-card">
+          <img class="art" src="void-chomp/img/card.webp" width="640" height="360" alt="A teal monster mouth gulping food on a picnic blanket" loading="lazy">
+          <div class="body">
+            <span class="status status-now">Coming soon to Google Play</span>
+            <h3>Void Chomp: Hole Lotta Snacks</h3>
             <p>Steer a hungry monster mouth, eat it all and grow bigger!</p>
-            <a class="btn btn-lime" href="void-chomp/">See Void Chomp &rarr;</a>
+            <div class="foot"><a class="btn btn-outline" href="void-chomp/">See Void Chomp &rarr;</a></div>
           </div>
         </article>
-        <!-- /GAME CARD -->
-        <div class="card card-placeholder" aria-hidden="true">
-          <p><strong style="color:var(--gold)">Next game</strong><br>Something new is cooking&hellip;</p>
-        </div>
+        <article class="title-card">
+          <img class="art" src="assets/img/dent-collector-title.webp" width="960" height="540" alt="Dent Collector title logo: chunky riveted green letters with BOLT the robot peeking over the top holding a checklist, on a starry space background" loading="lazy">
+          <div class="body">
+            <span class="status status-dev">In development</span>
+            <h3>Dent Collector</h3>
+            <p>A space adventure aboard the Lucky Dent. Fly with Captain Dash and his scrappy crew, take on odd jobs across the frontier, and collect a few dents along the way.</p>
+            <div class="foot"><span class="foot-note">More news coming later</span></div>
+          </div>
+        </article>
+        <article class="title-card">
+          <div class="art-panel" role="img" aria-label="Dent Collector anime series">
+            <span class="art-kicker">Anime series</span>
+            <span class="art-title">Dent Collector</span>
+          </div>
+          <div class="body">
+            <span class="status status-planned">Planned</span>
+            <h3>Dent Collector: the anime series</h3>
+            <p>A bright workplace comedy in space, based on the game. Captain Dash, Mags the mechanic, BOLT the robot and the rest of the Lucky Dent crew take the jobs nobody else wants, and find out they work better together.</p>
+            <div class="foot"><span class="foot-note">Coming later</span></div>
+          </div>
+        </article>
       </div>
+
+      <h3 style="margin-top:56px">What's next</h3>
+      <ol class="roadmap" aria-label="GuinnGaming roadmap">
+        <li style="--c:#9BE22D"><span class="when">Now</span><strong>Void Chomp</strong><span class="sub">Coming soon to Google Play</span></li>
+        <li style="--c:#4fc3f7"><span class="when">Next</span><strong>Dent Collector</strong><span class="sub">The game, in development</span></li>
+        <li style="--c:#b9a6ff"><span class="when">Later</span><strong>Dent Collector anime series</strong><span class="sub">Planned, based on the game</span></li>
+      </ol>
     </div>
   </section>
 
   <section id="about">
-    <div class="wrap">
-      <h2>About</h2>
-      <p class="lead">GuinnGaming is an independent game studio run by Dustian Guinn. We build colorful, easy-to-pick-up games that are fair to play: every level can be beaten without paying.</p>
-    </div>
-  </section>
-
-  <section id="contact" class="section-alt">
-    <div class="wrap">
-      <h2>Contact</h2>
-      <p class="lead">Questions, bugs, or press? Email <a href="mailto:GuinnGaming87@gmail.com">GuinnGaming87@gmail.com</a>.</p>
+    <div class="wrap about-grid">
+      <div>
+        <span class="eyebrow">About</span>
+        <h2>A small studio that plays fair</h2>
+        <p class="lead">GuinnGaming is an independent game studio run by Dustian Guinn. We build colorful, easy-to-pick-up games that are fair to play: every level can be beaten without paying.</p>
+      </div>
+      <div id="contact" class="contact-box">
+        <span class="eyebrow">Contact</span>
+        <p>Questions, bugs, or press?</p>
+        <p><a href="mailto:GuinnGaming87@gmail.com">GuinnGaming87@gmail.com</a></p>
+      </div>
     </div>
   </section>
 </main>
 
-<footer class="site-footer">
+<footer class="site-footer footer-pro">
   <div class="wrap">
-    <p style="margin:0">&copy; 2026 GuinnGaming</p>
-    <nav aria-label="Footer">
-      <a href="void-chomp/">Void Chomp</a>
-      <a href="store/">Store</a>
-      <a href="void-chomp/privacy/">Privacy Policy</a>
-      <a href="#contact">Contact</a>
+    <div class="fcol-brand">
+      <div class="fbrand"><img src="assets/img/gg-mark.png" alt="" width="34" height="34"><span>Guinn<b>Gaming</b></span></div>
+      <p style="margin:0;max-width:34ch">Independent games, made with care. Small studio, big appetite.</p>
+    </div>
+    <nav aria-label="Footer games">
+      <h4>Games</h4>
+      <ul>
+        <li><a href="void-chomp/">Void Chomp</a></li>
+        <li><a href="#games">Dent Collector</a></li>
+      </ul>
     </nav>
-    <p style="margin:0;width:100%;font-size:.85rem">This website sets no cookies and uses no analytics or ad trackers. Fonts load from Google Fonts.</p>
+    <nav aria-label="Footer studio">
+      <h4>Studio</h4>
+      <ul>
+        <li><a href="store/">Store</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="void-chomp/privacy/">Privacy Policy</a></li>
+      </ul>
+    </nav>
+    <div class="legal">
+      <span>&copy; 2026 GuinnGaming</span>
+      <span>This website sets no cookies and uses no analytics or ad trackers. Fonts load from Google Fonts.</span>
+    </div>
   </div>
 </footer>
 </body>
