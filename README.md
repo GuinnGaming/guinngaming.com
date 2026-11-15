@@ -10,6 +10,7 @@ Fonts (Creepster for logos, Nunito for text) load from Google Fonts.
 | `index.html` | Studio home: hero, **Our games** grid, About, Contact |
 | `void-chomp/index.html` | Void Chomp: Hole Lotta Snacks game page |
 | `void-chomp/privacy/index.html` | Void Chomp privacy policy (the URL to give Play Console) |
+| `dent-collector/privacy/index.html` | Dent Collector privacy policy (the URL to give Play Console for that game) |
 | `store/index.html` | Merch Store tab: links out to the Fourthwall shop (guinngaming-shop.fourthwall.com); no JS, no embeds, no trackers |
 | `404.html` | Not-found page (GitHub Pages serves it automatically) |
 | `assets/css/style.css` | Shared styles for every page |
@@ -22,6 +23,7 @@ Fonts (Creepster for logos, Nunito for text) load from Google Fonts.
 - Repo: `GuinnGaming/guinngaming.com`, published from branch `main`, folder `/` (root).
 - Custom domain: `guinngaming.com` (set by the `CNAME` file). DNS is managed at Porkbun.
 - Void Chomp privacy policy (the URL for Play Console): `https://guinngaming.com/void-chomp/privacy/`
+- Dent Collector privacy policy (the URL for that game's Play Console listing): `https://guinngaming.com/dent-collector/privacy/`
 - Pushing to `main` republishes the site automatically.
 
 Notes:
