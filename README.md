@@ -11,7 +11,8 @@ Fonts (Creepster for logos, Nunito for text) load from Google Fonts.
 | `void-chomp/index.html` | Void Chomp: Hole Lotta Snacks game page |
 | `void-chomp/privacy/index.html` | Void Chomp privacy policy (the URL to give Play Console) |
 | `dent-collector/privacy/index.html` | Dent Collector privacy policy (the URL to give Play Console for that game) |
-| `pocket-munch/privacy/index.html` | Pocket Munch privacy policy (the URL to give Play Console for that game; keep this URL if the game is renamed) |
+| `squishy/privacy/index.html` | Squishy: Full of Snacks privacy policy (the URL to give Play Console for that game) |
+| `pocket-munch/privacy/index.html` | Redirect + note: Pocket Munch was renamed Squishy: Full of Snacks; forwards to `/squishy/privacy/` |
 | `terms/index.html` | Studio Terms of Service (the URL to give Play Console for the trader / app content declaration) |
 | `store/index.html` | Merch Store tab: links out to the Fourthwall shop (guinngaming-shop.fourthwall.com); no JS, no embeds, no trackers |
 | `404.html` | Not-found page (GitHub Pages serves it automatically) |
@@ -26,7 +27,7 @@ Fonts (Creepster for logos, Nunito for text) load from Google Fonts.
 - Custom domain: `guinngaming.com` (set by the `CNAME` file). DNS is managed at Porkbun.
 - Void Chomp privacy policy (the URL for Play Console): `https://guinngaming.com/void-chomp/privacy/`
 - Dent Collector privacy policy (the URL for that game's Play Console listing): `https://guinngaming.com/dent-collector/privacy/`
-- Pocket Munch privacy policy (the URL for that game's Play Console listing): `https://guinngaming.com/pocket-munch/privacy/`
+- Squishy: Full of Snacks privacy policy (the URL for that game's Play Console listing): `https://guinngaming.com/squishy/privacy/` (the old `/pocket-munch/privacy/` URL forwards there)
 - Terms of Service (the URL for Play Console): `https://guinngaming.com/terms/`
 - Pushing to `main` republishes the site automatically.
 
