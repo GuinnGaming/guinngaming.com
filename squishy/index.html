@@ -6,7 +6,7 @@
 <title>Squishy: Full of Snacks | GuinnGaming</title>
 <meta name="description" content="Squish snacks in a wobbly belly. Drag, match three, and feed your Squishy. Squishy: Full of Snacks is coming soon to Google Play.">
   <link rel="canonical" href="https://guinngaming.com/squishy/">
-<meta name="theme-color" content="#1B1B1F">
+<meta name="theme-color" content="#0A0A12">
 <meta property="og:title" content="Squishy: Full of Snacks">
 <meta property="og:description" content="Squish snacks in a wobbly belly. Drag, match three, and feed your Squishy. Coming soon to Google Play.">
 <meta property="og:type" content="website">
@@ -20,138 +20,95 @@
 <link rel="icon" href="../assets/img/gg-favicon-32.png" type="image/png" sizes="32x32">
 <link rel="icon" href="../assets/img/gg-favicon-64.png" type="image/png" sizes="64x64">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Creepster&family=Nunito:wght@400;600;700;800;900&display=swap">
-<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="preload" href="../assets/fonts/bricolage-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/site.css">
 </head>
-<body>
+<body class="game sq">
 <a class="skip" href="#main">Skip to content</a>
-<header class="site-header">
-  <div class="wrap">
-    <a class="brand" href="../" aria-label="GuinnGaming home"><img src="../assets/img/gg-mark.png" srcset="../assets/img/gg-mark.png 2x, ../assets/img/gg-mark@2x.png 4x" alt="" width="34" height="34"><span>Guinn<b>Gaming</b></span></a>
-    <nav aria-label="Main"><ul class="nav">
-      <li><a href="../#games" aria-current="page">Games</a></li>
-      <li><a href="../store/">Store</a></li>
-      <li><a href="privacy/">Privacy</a></li>
-      <li><a href="../#contact">Contact</a></li>
-    </ul></nav>
-  </div>
-</header>
-
+<header class="nav"><div class="wrap">
+<a class="logo" href="../" aria-label="GuinnGaming home"><img src="../assets/img/gg-wordmark-mark.png" alt="" width="48" height="22"><span>Guinn<b>Gaming</b></span></a>
+<nav aria-label="Main"><ul class="links"><li><a href="../#games" aria-current="page">Games</a></li><li><a href="../news/">News</a></li><li><a href="../store/">Merch</a></li><li><a href="../#studio">Studio</a></li><li><a href="../#contact">Contact</a></li></ul></nav>
+<div class="navr"><a class="icon-btn" href="https://www.youtube.com/@GuinnGaming" rel="noopener" aria-label="GuinnGaming on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.7 15V9l5.8 3z"/></svg></a><a class="btn btn-lime btn-sm" href="https://guinngaming-shop.fourthwall.com/" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7V6a6 6 0 0 1 12 0v1h3l-1.2 14.1A2 2 0 0 1 17.8 23H6.2a2 2 0 0 1-2-1.9L3 7zm2 0h8V6a4 4 0 0 0-8 0z"/></svg><span>Shop merch</span></a>
+<details class="mnav"><summary aria-label="Open menu"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="7" width="16" height="2" rx="1"/><rect x="4" y="15" width="16" height="2" rx="1"/></svg></summary><nav aria-label="Mobile"><ul><li><a href="../#games" aria-current="page">Games</a></li><li><a href="../news/">News</a></li><li><a href="../store/">Merch</a></li><li><a href="../#studio">Studio</a></li><li><a href="../#contact">Contact</a></li><li><a href="https://www.youtube.com/@GuinnGaming" rel="noopener">YouTube</a></li></ul></nav></details></div>
+</div></header>
 <main id="main">
-  <section class="hero">
-    <div class="wrap hero-grid">
-      <div>
-        <div class="game-hero-title">
-          <img class="game-icon" src="img/icon.webp" width="120" height="120" alt="Squishy app icon: a smiling translucent blue belly holding a strawberry, a chocolate-chip cookie and a pink candy, on a purple dotted background">
-          <h1 class="logo game-logo">Squishy</h1>
-        </div>
-        <p class="tagline">Full of Snacks! Squish snacks in a wobbly belly.</p>
-        <p class="lead">Meet Squishy, a bouncy little belly with a big appetite and a whole lot of snacks inside. Drag and poke the belly with your finger to slosh everything around. Line up three or more of the same treat and they burst in a shower of color and crumbs. Chain matches together for bigger, brighter combos!</p>
-        <div class="btn-row">
-          <!-- PLAY BUTTON: when the public listing is live, replace this <span> with
-               <a class="play-badge" href="https://play.google.com/store/apps/details?id=com.guinngaming.squishy"> ... Get it on Google Play ... </a> -->
-          <span class="play-badge" role="note" aria-label="Coming soon to Google Play">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#9BE22D" d="M4 2.8v18.4c0 .6.7 1 1.2.7l15.4-9.2c.5-.3.5-1.1 0-1.4L5.2 2.1C4.7 1.8 4 2.2 4 2.8z"/></svg>
-            <span><small>Coming soon to</small><strong>Google Play</strong></span>
-          </span>
-        </div>
-        <p style="margin-top:14px;color:var(--muted);font-size:.95rem">Free to play &middot; Android &middot; Rated Everyone</p>
-      </div>
-      <div class="phone">
-        <img src="img/shot-01.webp" width="540" height="960" alt="A finger presses the side of a smiling blue Squishy belly packed with fruit, cookies and sweets, under the caption Squish to match!" fetchpriority="high">
-      </div>
-    </div>
-  </section>
-
-  <section class="section-alt">
-    <div class="wrap split">
-      <div class="phone"><img src="img/shot-03.webp" width="540" height="960" alt="A hand stretches a smiling blue Squishy belly so snacks inside slide around, under the caption Press, slide, wobble!" loading="lazy"></div>
-      <div>
-        <h2>Drag, match, pop</h2>
-        <p>Snacks tumble around in the belly, and it's your job to squish them into matches.</p>
-        <ul class="ticks">
-          <li><strong>Poke and slosh:</strong> drag and poke the belly with your finger to move everything around.</li>
-          <li><strong>Match three or more:</strong> line up the same treat and they burst in a shower of color and crumbs.</li>
-          <li><strong>Chain it:</strong> string matches together for bigger, brighter combos.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section id="powers">
-    <div class="wrap">
-      <h2>Pick a power</h2>
-      <p class="lead">Spend crumbs you earn on powers in the shop, keep them in your inventory, and pick three different ones before a level. Tap a power and it fires instantly.</p>
-      <ul class="ticks">
-        <li><strong>Flavor Pod</strong> clears every snack of one kind.</li>
-        <li><strong>Bubble Pod</strong> sinks, swells, and pops to shake up the pile.</li>
-        <li><strong>Jelly Bell</strong> rolls the belly walls in waves so every snack finds a new spot.</li>
-        <li><strong>Big Gulp</strong> gulps 6 to 8 snacks from the middle of the belly.</li>
-        <li><strong>Milkshake Slurp</strong> pulls snacks in toward the center.</li>
-        <li><strong>Second Helping</strong> starts your next match at x2 and doubles the crumbs you earn.</li>
-      </ul>
-      <p>Watch out for bombs in later levels. They count down with your moves, then blow up nearby snacks. Those snacks still count toward your goals, and bombs never hurt Squishy or take a life.</p>
-    </div>
-  </section>
-
-  <section class="section-alt">
-    <div class="wrap split reverse">
-      <div class="phone"><img src="img/shot-05.webp" width="540" height="960" alt="Three strawberries line up and burst inside a happy Squishy belly, under the caption Three in a row? Yum!" loading="lazy"></div>
-      <div>
-        <h2>Play your way</h2>
-        <ul class="ticks">
-          <li><strong>Relax</strong> on an endless board you can come back to any time.</li>
-          <li><strong>Score</strong> to chase your best total.</li>
-          <li><strong>Travel the level path,</strong> clear the goals, and unlock new looks with the crumbs you earn.</li>
-        </ul>
-        <p>Dress Squishy up, pick a background, and choose a name from a menu of tasty words. No typing needed, and the name stays on your device.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="store">
-    <div class="wrap">
-      <div>
-        <h2>Fair and free to play</h2>
-        <p>No account and no chat. Optional in-app purchases let you buy gems or a few looks if you want them. Ask a parent or guardian before you buy. Optional ads let you earn extra rewards when you choose to watch one.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="shots" class="section-alt">
-    <div class="wrap">
-      <h2>Screenshots</h2>
-      <p class="lead">Swipe or scroll sideways to see more.</p>
-      <div class="strip" tabindex="0" role="region" aria-label="Screenshots, scroll sideways">
-        <figure><img src="img/shot-01.webp" width="540" height="960" alt="A finger presses the side of a smiling blue Squishy belly packed with snacks, under the caption Squish to match!" loading="lazy"><figcaption>Squish to match</figcaption></figure>
-        <figure><img src="img/shot-02.webp" width="540" height="960" alt="Gameplay on a bakery background: Squishy pops a match for +3 crumbs, under the caption A belly full of snacks" loading="lazy"><figcaption>A belly full of snacks</figcaption></figure>
-        <figure><img src="img/shot-03.webp" width="540" height="960" alt="A hand stretches a smiling blue Squishy belly so the snacks inside slide around, under the caption Press, slide, wobble!" loading="lazy"><figcaption>Press, slide, wobble</figcaption></figure>
-        <figure><img src="img/shot-04.webp" width="540" height="960" alt="Gameplay on a carnival background: a x2 combo and crumb burst inside Squishy, under the caption Chain combos, win big!" loading="lazy"><figcaption>Chain combos</figcaption></figure>
-        <figure><img src="img/shot-05.webp" width="540" height="960" alt="Three strawberries line up and burst inside a happy Squishy belly, under the caption Three in a row? Yum!" loading="lazy"><figcaption>Three in a row</figcaption></figure>
-        <figure><img src="img/shot-06.webp" width="540" height="960" alt="A level-complete screen shows all goals finished and a crumbs reward, under the caption Munch through every level" loading="lazy"><figcaption>Clear the goals</figcaption></figure>
-        <figure><img src="img/shot-07.webp" width="540" height="960" alt="The in-game shop with Looks and Backgrounds, including several Squishy skins, under the caption Dress up your Squishy" loading="lazy"><figcaption>Dress up</figcaption></figure>
-        <figure><img src="img/shot-08.webp" width="540" height="960" alt="The Jelly Bell power rolls Squishy's belly walls in waves, under the caption Ring the Jelly Bell!" loading="lazy"><figcaption>Jelly Bell</figcaption></figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- TRAILER (later): paste a YouTube embed here, e.g. using youtube-nocookie.com -->
-</main>
-
-<footer class="site-footer">
-  <div class="wrap">
-    <p style="margin:0">Free to play. Rated Everyone.</p>
-    <nav aria-label="Footer">
-      <a href="../">GuinnGaming</a>
-      <a href="../store/">Store</a>
-      <a href="privacy/">Privacy Policy</a>
-      <a href="../terms/">Terms of Service</a>
-      <a href="mailto:GuinnGaming87@gmail.com">Contact</a>
-    </nav>
-    <p style="margin:0;width:100%;font-size:.85rem">&copy; 2026 GuinnGaming &middot; This website sets no cookies and uses no analytics or ad trackers. Fonts load from Google Fonts.</p>
+<section class="ghero" style="--glow:rgba(255,122,182,.40);--accent:var(--pink)" aria-labelledby="g-h"><div class="ghero-bg" aria-hidden="true"><img src="img/feature.webp" width="1024" height="500" alt=""></div>
+ <div class="wrap ghero-in">
+  <div>
+   <ol class="crumb" aria-label="Breadcrumb"><li><a href="../#games">Games</a></li><li aria-current="page">Squishy</li></ol>
+   <div class="title-row"><img class="gicon" src="img/icon.webp" width="136" height="136" alt="Squishy app icon: a smiling translucent blue belly holding a strawberry, a chocolate-chip cookie and a pink candy, on a purple dotted background" fetchpriority="high"><div><h1 id="g-h">Squishy</h1><p class="sub">Full of Snacks!</p></div></div>
+   <p class="lede">Meet Squishy, a bouncy little belly with a big appetite and a whole lot of snacks inside. Drag and poke the belly with your finger to slosh everything around. Line up three or more of the same treat and they burst in a shower of color and crumbs. Chain matches together for bigger, brighter combos!</p>
+   <div class="row"><span class="gp" role="img" aria-label="Coming soon to Google Play"><svg viewBox="0 0 26 28" aria-hidden="true"><path d="M1 1l13 13L1 27c-.6-.3-1-1-1-1.8V2.8C0 2 .4 1.3 1 1z" fill="#00D7FE"/><path d="M18.5 9.5L14 14 1 1c.3-.2.7-.2 1.1 0z" fill="#00F076"/><path d="M18.5 18.5L2.1 27.9c-.4.2-.8.2-1.1 0L14 14z" fill="#FF3A44"/><path d="M24 11.6c1.3.8 1.3 2.1 0 2.9l-5.5 3.9L14 14l4.5-4.5z" fill="#FFD400"/></svg><span><small>Coming soon to</small><strong>Google Play</strong></span></span><a class="btn btn-ghost" href="#shots">See screenshots</a></div>
   </div>
-</footer>
+  <div class="fan" aria-hidden="true"><div class="ph f1"><img src="img/shot-02.webp" width="540" height="960" alt=""></div><div class="ph f2"><img src="img/shot-01.webp" width="540" height="960" alt=""></div><div class="ph f3"><img src="img/shot-05.webp" width="540" height="960" alt=""></div></div>
+ </div>
+ <dl class="wrap facts">
+  <div><dt>Genre</dt><dd>Puzzle · Match-3</dd></div><div><dt>Platform</dt><dd>Android</dd></div><div><dt>Price</dt><dd>Free to play</dd></div><div><dt>Status</dt><dd><span class="dot"></span>Closed testing</dd></div><div><dt>Rating</dt><dd>Everyone</dd></div>
+ </dl>
+</section>
+<nav class="subnav" aria-label="On this page"><div class="wrap"><a href="#play">How it plays</a><a href="#powers">Powers</a><a href="#modes">Play your way</a><a href="#shots">Screenshots</a><a href="#faq">FAQ</a></div></nav>
+
+<section class="sec feat" id="play" style="--accent:var(--pink);--blob1:#FF9DCB;--blob2:#C23E86" aria-labelledby="play-h"><div class="wrap feat-in">
+ <div class="feat-art"><div class="blob"></div><div class="ph"><img src="img/shot-03.webp" width="540" height="960" alt="A hand stretches a smiling blue Squishy belly so snacks inside slide around, under the caption Press, slide, wobble!" loading="lazy"></div></div>
+ <div><span class="eyebrow" style="color:var(--pink)">How it plays</span><h2 id="play-h">Drag, match,<br>pop.</h2>
+ <p class="big">Snacks tumble around in the belly, and it's your job to squish them into matches.</p>
+ <ol class="fl">
+  <li><b>Poke and slosh</b><span>Drag and poke the belly with your finger to move everything around.</span></li>
+  <li><b>Match three or more</b><span>Line up the same treat and they burst in a shower of color and crumbs.</span></li>
+  <li><b>Chain it</b><span>String matches together for bigger, brighter combos.</span></li>
+ </ol></div>
+</div></section>
+
+<section class="sec alt" id="powers" aria-labelledby="pw-h"><div class="wrap">
+ <div class="sec-head"><div><span class="eyebrow" style="color:var(--sky)">Pick a power</span><h2 id="pw-h">Six powers,<br>pick three.</h2></div><p>Spend crumbs you earn on powers in the shop, keep them in your inventory, and pick three different ones before a level. Tap a power and it fires instantly.</p></div>
+ <ul class="plist"><li style="--c:var(--pink)"><b>Flavor Pod</b><span>Clears every snack of one kind.</span></li><li style="--c:var(--sky)"><b>Bubble Pod</b><span>Sinks, swells, and pops to shake up the pile.</span></li><li style="--c:var(--violet2)"><b>Jelly Bell</b><span>Rolls the belly walls in waves so every snack finds a new spot.</span></li><li style="--c:var(--lime)"><b>Big Gulp</b><span>Gulps 6 to 8 snacks from the middle of the belly.</span></li><li style="--c:var(--sun)"><b>Milkshake Slurp</b><span>Pulls snacks in toward the center.</span></li><li style="--c:var(--pink)"><b>Second Helping</b><span>Starts your next match at x2 and doubles the crumbs you earn.</span></li></ul>
+ <p class="big" style="max-width:70ch;margin-top:34px">Watch out for bombs in later levels. They count down with your moves, then blow up nearby snacks. Those snacks still count toward your goals, and bombs never hurt Squishy or take a life.</p>
+</div></section>
+
+<section class="sec" id="modes" aria-labelledby="modes-h"><div class="wrap split rev">
+ <div class="feat-art" style="--blob1:#9EE6FF;--blob2:#5B2FD6"><div class="blob"></div><div class="ph" style="width:300px"><img src="img/shot-07.webp" width="540" height="960" alt="The in-game shop with Looks and Backgrounds, including several Squishy skins" loading="lazy"></div></div>
+ <div><span class="eyebrow" style="color:var(--sun)">Play your way</span><h2 id="modes-h">Relax, score<br>or travel.</h2>
+ <ol class="fl" style="--accent:var(--sun)">
+  <li><b>Relax</b><span>An endless board you can come back to any time.</span></li>
+  <li><b>Score</b><span>Chase your best total.</span></li>
+  <li><b>Travel the level path</b><span>Clear the goals, and unlock new looks with the crumbs you earn.</span></li>
+ </ol>
+ <p class="big">Dress Squishy up, pick a background, and choose a name from a menu of tasty words. No typing needed, and the name stays on your device.</p></div>
+</div></section>
+
+<section aria-labelledby="fair-h"><div class="wrap"><div class="fair-card" style="background:linear-gradient(100deg,#FF9DCB,#FFD6EA)">
+ <div class="fair-badge" aria-hidden="true">FAIR<br>PLAY</div>
+ <div><h2 id="fair-h">Fair and free to play.</h2><p>No account and no chat. Optional in-app purchases let you buy gems or a few looks if you want them. Ask a parent or guardian before you buy. Optional ads let you earn extra rewards when you choose to watch one.</p></div>
+</div></div></section>
+
+<section class="sec shots" id="shots" aria-labelledby="shots-h"><div class="wrap"><div class="sec-head"><div><span class="eyebrow" style="color:var(--pink)">Screenshots</span><h2 id="shots-h">See it in action.</h2></div><p>Swipe or scroll sideways to see more.</p></div></div>
+ <ul class="strip" tabindex="0" aria-label="Screenshots, scroll sideways"><li><figure><div class="ph"><img src="img/shot-01.webp" width="540" height="960" alt="A finger presses the side of a smiling blue Squishy belly packed with snacks, under the caption Squish to match!" loading="lazy"></div><figcaption>Squish to match</figcaption></figure></li><li><figure><div class="ph"><img src="img/shot-02.webp" width="540" height="960" alt="Gameplay on a bakery background: Squishy pops a match for +3 crumbs, under the caption A belly full of snacks" loading="lazy"></div><figcaption>A belly full of snacks</figcaption></figure></li><li><figure><div class="ph"><img src="img/shot-03.webp" width="540" height="960" alt="A hand stretches a smiling blue Squishy belly so the snacks inside slide around, under the caption Press, slide, wobble!" loading="lazy"></div><figcaption>Press, slide, wobble</figcaption></figure></li><li><figure><div class="ph"><img src="img/shot-04.webp" width="540" height="960" alt="Gameplay on a carnival background: a x2 combo and crumb burst inside Squishy, under the caption Chain combos, win big!" loading="lazy"></div><figcaption>Chain combos</figcaption></figure></li><li><figure><div class="ph"><img src="img/shot-05.webp" width="540" height="960" alt="Three strawberries line up and burst inside a happy Squishy belly, under the caption Three in a row? Yum!" loading="lazy"></div><figcaption>Three in a row</figcaption></figure></li><li><figure><div class="ph"><img src="img/shot-06.webp" width="540" height="960" alt="A level-complete screen shows all goals finished and a crumbs reward, under the caption Munch through every level" loading="lazy"></div><figcaption>Clear the goals</figcaption></figure></li><li><figure><div class="ph"><img src="img/shot-07.webp" width="540" height="960" alt="The in-game shop with Looks and Backgrounds, including several Squishy skins, under the caption Dress up your Squishy" loading="lazy"></div><figcaption>Dress up</figcaption></figure></li><li><figure><div class="ph"><img src="img/shot-08.webp" width="540" height="960" alt="The Jelly Bell power rolls Squishy's belly walls in waves, under the caption Ring the Jelly Bell!" loading="lazy"></div><figcaption>Jelly Bell</figcaption></figure></li></ul>
+</section>
+
+<section class="sec" id="faq" aria-labelledby="faq-h" style="padding-top:20px"><div class="wrap faq-in">
+ <div><span class="eyebrow" style="color:var(--pink)">FAQ</span><h2 id="faq-h">Questions?</h2><p class="big inline">Still stuck? Email <a href="mailto:GuinnGaming87@gmail.com">GuinnGaming87@gmail.com</a> and we'll help.</p></div>
+ <div class="qs">
+  <details open><summary>Is Squishy free?</summary><p>Yes. Squishy is free to play. Optional in-app purchases let you buy gems or a few looks if you want them, and optional ads let you earn extra rewards when you choose to watch one.</p></details>
+  <details><summary>When can I play it?</summary><p>Squishy: Full of Snacks is in closed testing on Google Play now and is coming soon to Android. Want to help test it? <a href="mailto:GuinnGaming87@gmail.com?subject=Squishy%20testing">Email us</a>.</p></details>
+  <details><summary>Do I need an account?</summary><p>No. There's no account and no chat.</p></details>
+  <details><summary>How is my data handled?</summary><p>Read the <a href="privacy/">Squishy privacy policy</a> for what the game collects and why.</p></details>
+ </div>
+</div></section>
+<section class="sec alt" aria-labelledby="more-h"><div class="wrap"><div class="sec-head"><div><span class="eyebrow">More from GuinnGaming</span><h2 id="more-h">Keep snacking.</h2></div><a class="lnk" href="../#games">All games →</a></div><div class="mgrid"><a class="mc" href="../void-chomp/"><img src="../void-chomp/img/feature.webp" width="1024" height="500" alt="" loading="lazy"><div><img class="mi" src="../assets/img/void-chomp-icon.webp" width="56" height="56" alt="" loading="lazy"><span><b>Void Chomp: Hole Lotta Snacks</b><small>Closed testing · coming soon</small></span></div></a><a class="mc" href="../dent-collector/"><img src="../assets/img/dent-collector-feature.webp" width="1024" height="500" alt="" loading="lazy"><div><img class="mi" src="../assets/img/dent-collector-icon.webp" width="56" height="56" alt="" loading="lazy"><span><b>Dent Collector</b><small>In development</small></span></div></a></div></div></section>
+</main>
+<footer><div class="wrap">
+<div class="fgrid">
+ <div><a class="logo" href="../" aria-label="GuinnGaming home"><img src="../assets/img/gg-wordmark-mark.png" alt="" width="48" height="22"><span>Guinn<b>Gaming</b></span></a>
+  <p>An independent game studio making colorful, fair-to-play games. Small studio, big appetite.</p>
+  <div class="soc"><a class="icon-btn" href="https://www.youtube.com/@GuinnGaming" rel="noopener" aria-label="GuinnGaming on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.7 15V9l5.8 3z"/></svg></a></div></div>
+ <nav aria-label="Footer games"><h2>Games</h2><ul><li><a href="../void-chomp/">Void Chomp</a></li><li><a href="../squishy/">Squishy: Full of Snacks</a></li><li><a href="../dent-collector/">Dent Collector</a></li></ul></nav>
+ <nav aria-label="Footer studio"><h2>Studio</h2><ul><li><a href="../news/">News</a></li><li><a href="../#studio">About</a></li><li><a href="../store/">Merch store</a></li><li><a href="https://www.youtube.com/@GuinnGaming" rel="noopener">YouTube</a></li></ul></nav>
+ <nav aria-label="Footer contact"><h2>Contact</h2><ul><li><a href="mailto:GuinnGaming87@gmail.com">GuinnGaming87@gmail.com</a></li><li><a href="../#contact">Help, bugs &amp; press</a></li></ul></nav>
+ <nav aria-label="Footer legal"><h2>Legal</h2><ul><li><a href="../void-chomp/privacy/">Void Chomp privacy</a></li><li><a href="../squishy/privacy/">Squishy privacy</a></li><li><a href="../dent-collector/privacy/">Dent Collector privacy</a></li><li><a href="../terms/">Terms of Service</a></li></ul></nav>
+</div>
+<p class="fbig" aria-hidden="true">Small studio,<br>big appetite.</p>
+<div class="flegal"><span>&copy; 2026 GuinnGaming</span><span>This website sets no cookies and uses no analytics or ad trackers.</span></div>
+</div></footer>
 </body>
 </html>

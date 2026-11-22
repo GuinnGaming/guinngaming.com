@@ -6,7 +6,7 @@
 <title>Void Chomp: Hole Lotta Snacks | GuinnGaming</title>
 <meta name="description" content="Steer a hungry monster mouth, eat it all and grow bigger! Void Chomp: Hole Lotta Snacks is coming to Android.">
   <link rel="canonical" href="https://guinngaming.com/void-chomp/">
-<meta name="theme-color" content="#101830">
+<meta name="theme-color" content="#0A0A12">
 <meta property="og:title" content="Void Chomp: Hole Lotta Snacks">
 <meta property="og:description" content="Eat it all, grow bigger. Coming to Android.">
 <meta property="og:type" content="website">
@@ -20,149 +20,97 @@
 <link rel="icon" href="../assets/img/gg-favicon-32.png" type="image/png" sizes="32x32">
 <link rel="icon" href="../assets/img/gg-favicon-64.png" type="image/png" sizes="64x64">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Creepster&family=Nunito:wght@400;600;700;800;900&display=swap">
-<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="preload" href="../assets/fonts/bricolage-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/css/site.css">
 </head>
-<body>
+<body class="game vc">
 <a class="skip" href="#main">Skip to content</a>
-<header class="site-header">
-  <div class="wrap">
-    <a class="brand" href="../" aria-label="GuinnGaming home"><img src="../assets/img/gg-mark.png" srcset="../assets/img/gg-mark.png 2x, ../assets/img/gg-mark@2x.png 4x" alt="" width="34" height="34"><span>Guinn<b>Gaming</b></span></a>
-    <nav aria-label="Main"><ul class="nav">
-      <li><a href="../#games" aria-current="page">Games</a></li>
-      <li><a href="../store/">Store</a></li>
-      <li><a href="privacy/">Privacy</a></li>
-      <li><a href="../#contact">Contact</a></li>
-    </ul></nav>
-  </div>
-</header>
-
+<header class="nav"><div class="wrap">
+<a class="logo" href="../" aria-label="GuinnGaming home"><img src="../assets/img/gg-wordmark-mark.png" alt="" width="48" height="22"><span>Guinn<b>Gaming</b></span></a>
+<nav aria-label="Main"><ul class="links"><li><a href="../#games" aria-current="page">Games</a></li><li><a href="../news/">News</a></li><li><a href="../store/">Merch</a></li><li><a href="../#studio">Studio</a></li><li><a href="../#contact">Contact</a></li></ul></nav>
+<div class="navr"><a class="icon-btn" href="https://www.youtube.com/@GuinnGaming" rel="noopener" aria-label="GuinnGaming on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.7 15V9l5.8 3z"/></svg></a><a class="btn btn-lime btn-sm" href="https://guinngaming-shop.fourthwall.com/" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7V6a6 6 0 0 1 12 0v1h3l-1.2 14.1A2 2 0 0 1 17.8 23H6.2a2 2 0 0 1-2-1.9L3 7zm2 0h8V6a4 4 0 0 0-8 0z"/></svg><span>Shop merch</span></a>
+<details class="mnav"><summary aria-label="Open menu"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="7" width="16" height="2" rx="1"/><rect x="4" y="15" width="16" height="2" rx="1"/></svg></summary><nav aria-label="Mobile"><ul><li><a href="../#games" aria-current="page">Games</a></li><li><a href="../news/">News</a></li><li><a href="../store/">Merch</a></li><li><a href="../#studio">Studio</a></li><li><a href="../#contact">Contact</a></li><li><a href="https://www.youtube.com/@GuinnGaming" rel="noopener">YouTube</a></li></ul></nav></details></div>
+</div></header>
 <main id="main">
-  <section class="hero">
-    <div class="wrap hero-grid">
-      <div>
-        <div class="game-hero-title">
-          <img class="game-icon" src="../assets/img/void-chomp-icon.webp" width="120" height="120" alt="Void Chomp app icon: a painted swirling monster mouth swallowing a yellow taxi and snacks">
-          <h1 class="logo game-logo">Void Chomp</h1>
-        </div>
-        <p class="tagline">Hole Lotta Snacks! Eat it all, grow bigger.</p>
-        <p class="lead">You're the Void, a hungry little monster with a bottomless appetite. Chomp crumbs, candy and cookies, grow bigger with every bite, and work your way up to donuts, toys and books. Clear every goal before the timer runs out, then unlock new monsters and skins.</p>
-        <div class="btn-row">
-          <!-- PLAY BUTTON: at launch replace this <span> with
-               <a class="play-badge" href="https://play.google.com/store/apps/details?id=com.guinngaming.voidchomp"> ... Get it on Google Play ... </a> -->
-          <span class="play-badge" role="note" aria-label="Coming to Android on Google Play">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#2ee6d6" d="M4 2.8v18.4c0 .6.7 1 1.2.7l15.4-9.2c.5-.3.5-1.1 0-1.4L5.2 2.1C4.7 1.8 4 2.2 4 2.8z"/></svg>
-            <span><small>Coming to Android on</small><strong>Google Play</strong></span>
-          </span>
-        </div>
-        <p style="margin-top:14px;color:var(--muted);font-size:.95rem">Free to play &middot; Android &middot; Rated Teen (13+)</p>
-      </div>
-      <div class="phone">
-        <img src="img/shot-gulp.webp" width="540" height="960" alt="A teal monster mouth mid-gulp on a picnic blanket, with a cookie crumb inside and a tip to eat cookies first to grow" fetchpriority="high">
-      </div>
-    </div>
-  </section>
-
-  <section class="section-alt">
-    <div class="wrap split">
-      <div class="phone"><img src="img/shot-midgame.webp" width="540" height="960" alt="The teal monster mouth swallowing a frosted cookie on a red picnic blanket, surrounded by chocolate cookies and a trail of snacks" loading="lazy"></div>
-      <div>
-        <h2>A vacuum with teeth</h2>
-        <p>Get close and your Void pulls food in. Round treats roll toward your mouth, flat ones slide and tip over the lip, and big items get a satisfying chomp, shake and burp.</p>
-        <ul class="ticks">
-          <li><strong>Follow the chain:</strong> food is laid out in snaking curves, zigzags, spirals and rings. Ride one chain straight into the next.</li>
-          <li><strong>Grow into it:</strong> too big to swallow yet? Shove it around until the goal bar says it fits.</li>
-          <li><strong>Watch out for bombs:</strong> they come in three sizes and cost you time and size. Steer around them, or grab a Shield.</li>
-          <li><strong>One finger:</strong> simple drag controls with adjustable move speed.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section id="worlds">
-    <div class="wrap">
-      <h2>Six worlds to devour</h2>
-      <p class="lead">Every world is packed with its own things to swallow, from tiny snacks to big stuff you'll need to grow into.</p>
-      <div class="grid worlds">
-        <figure><img src="img/world-picnic.webp" width="480" height="480" alt="The Picnic Blanket world from above, with yellow, blue and red checkered blankets and trails of snacks on the grass" loading="lazy"><figcaption>Picnic Blanket<span>Strawberries, sandwiches and pizza</span></figcaption></figure>
-        <figure><img src="img/world-kitchen.webp" width="480" height="480" alt="Monster mouth on a kitchen counter" loading="lazy"><figcaption>Kitchen Counter<span>Eggs, forks and cereal boxes</span></figcaption></figure>
-        <figure><img src="img/world-sidewalk.webp" width="480" height="480" alt="Monster mouth on a city sidewalk" loading="lazy"><figcaption>City Sidewalk<span>Pebbles, crayons and lost keys</span></figcaption></figure>
-        <figure><img src="img/world-construction.webp" width="480" height="480" alt="Monster mouth on a construction site with bricks and cones" loading="lazy"><figcaption>Construction Site<span>Bolts, bricks and traffic cones</span></figcaption></figure>
-        <figure><img src="img/world-garden.webp" width="480" height="480" alt="Monster mouth on a garden patio swallowing flowers" loading="lazy"><figcaption>Garden Patio<span>Acorns, snails and garden gnomes</span></figcaption></figure>
-        <figure><img src="img/world-bedroom.webp" width="480" height="480" alt="Monster mouth on a bedroom floor with rubber ducks" loading="lazy"><figcaption>Kid's Bedroom<span>Marbles, toy cars and rubber ducks</span></figcaption></figure>
-      </div>
-    </div>
-  </section>
-
-  <section class="section-alt">
-    <div class="wrap split reverse">
-      <div><img src="img/monsters-chomper-kraken.webp" width="540" height="270" alt="Chomper, the teal starter monster, next to the purple, tentacled Kraken" loading="lazy" style="max-width:min(540px,100%);margin:0 auto;border-radius:16px;border:2px solid rgba(46,230,214,.35)"></div>
-      <div>
-        <h2>Pick your monster</h2>
-        <p>Start as <strong>Chomper</strong>, then unlock <strong>Goofball</strong> and <strong>Xeno</strong>, each with its own lips, teeth and glowing eyes, and paint them in a rainbow of colors. Beat level 10 and the <strong>Kraken</strong> bursts out of the treasure chest.</p>
-        <p>Unlock them with coins you earn by playing.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="powerups">
-    <div class="wrap">
-      <h2>Power up</h2>
-      <p class="lead">Pick up to 3 power-ups for every run.</p>
-      <ul class="ticks">
-        <li><strong>Snack Snag:</strong> pull food in from farther away.</li>
-        <li><strong>Belly Boost:</strong> an instant size boost.</li>
-        <li><strong>Snack Time:</strong> extra seconds on the clock.</li>
-        <li><strong>Shield:</strong> bombs bounce off for 10 seconds.</li>
-      </ul>
-    </div>
-  </section>
-
-
-  <section id="store" class="section-alt">
-    <div class="wrap">
-      <div>
-        <h2>Fair and free to play</h2>
-        <p>Every level can be beaten without paying. Lives refill on their own over time, one every 5 minutes, and winning a level never costs a life.</p>
-        <p>Earn coins as you play, then spend them on new monsters, colors and power-ups.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="shots">
-    <div class="wrap">
-      <h2>Screenshots</h2>
-      <p class="lead">Swipe or scroll sideways to see more.</p>
-      <div class="strip" tabindex="0" role="region" aria-label="Screenshots, scroll sideways">
-        <figure><img src="img/shot-title.webp" width="540" height="960" alt="Void Chomp title screen with the lime logo, a Start button, and a purple tentacled monster mouth" loading="lazy"><figcaption>Title</figcaption></figure>
-        <figure><img src="img/shot-gulp.webp" width="540" height="960" alt="A teal monster mouth mid-gulp on a picnic blanket, with a cookie crumb inside" loading="lazy"><figcaption>Mid-gulp</figcaption></figure>
-        <figure><img src="img/shot-midgame.webp" width="540" height="960" alt="The teal monster mouth swallowing a frosted cookie on a picnic blanket" loading="lazy"><figcaption>Snack chain</figcaption></figure>
-        <figure><img src="img/shot-overview.webp" width="540" height="930" alt="Top-down view of the Picnic Blanket world, with checkered blankets, snack trails and red bomb zones on the grass" loading="lazy"><figcaption>Picnic world</figcaption></figure>
-        <figure><img src="img/shot-kitchen.webp" width="540" height="960" alt="The teal monster mouth on a wooden kitchen counter, swallowing a swirl of green pasta" loading="lazy"><figcaption>Kitchen Counter</figcaption></figure>
-        <figure><img src="img/shot-garden.webp" width="540" height="960" alt="The teal monster mouth on a garden path, pulling in acorns" loading="lazy"><figcaption>Garden Patio</figcaption></figure>
-        <figure><img src="img/shot-bedroom.webp" width="540" height="960" alt="The teal monster mouth on a bedroom floor, swallowing dice next to a blue marble" loading="lazy"><figcaption>Kid's Bedroom</figcaption></figure>
-        <figure><img src="img/shot-win.webp" width="540" height="960" alt="Level complete screen with a three-star burst, confetti and bonus coins" loading="lazy"><figcaption>Level complete</figcaption></figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- TRAILER (later): paste a YouTube embed here, e.g. using youtube-nocookie.com -->
-</main>
-
-<footer class="site-footer">
-  <div class="wrap">
-    <p style="margin:0">Free to play. Rated for ages 13 and up.</p>
-    <nav aria-label="Footer">
-      <a href="../">GuinnGaming</a>
-      <a href="../store/">Store</a>
-      <a href="privacy/">Privacy Policy</a>
-      <a href="../terms/">Terms of Service</a>
-      <a href="mailto:GuinnGaming87@gmail.com">Contact</a>
-    </nav>
-    <p style="margin:0;width:100%;font-size:.85rem">&copy; 2026 GuinnGaming &middot; This website sets no cookies and uses no analytics or ad trackers. Fonts load from Google Fonts.</p>
+<section class="ghero" aria-labelledby="g-h"><div class="ghero-bg" aria-hidden="true"><img src="img/hero-bg.webp" width="960" height="540" alt=""></div>
+ <div class="wrap ghero-in">
+  <div>
+   <ol class="crumb" aria-label="Breadcrumb"><li><a href="../#games">Games</a></li><li aria-current="page">Void Chomp</li></ol>
+   <div class="title-row"><img class="gicon" src="../assets/img/void-chomp-icon.webp" width="136" height="136" alt="Void Chomp app icon: a painted swirling monster mouth swallowing a yellow taxi and snacks" fetchpriority="high"><div><h1 id="g-h">Void Chomp</h1><p class="sub">Hole Lotta Snacks</p></div></div>
+   <p class="lede">You're the Void, a hungry little monster with a bottomless appetite. Chomp crumbs, candy and cookies, grow bigger with every bite, and work your way up to donuts, toys and books. Clear every goal before the timer runs out, then unlock new monsters and skins.</p>
+   <div class="row"><span class="gp" role="img" aria-label="Coming soon to Google Play"><svg viewBox="0 0 26 28" aria-hidden="true"><path d="M1 1l13 13L1 27c-.6-.3-1-1-1-1.8V2.8C0 2 .4 1.3 1 1z" fill="#00D7FE"/><path d="M18.5 9.5L14 14 1 1c.3-.2.7-.2 1.1 0z" fill="#00F076"/><path d="M18.5 18.5L2.1 27.9c-.4.2-.8.2-1.1 0L14 14z" fill="#FF3A44"/><path d="M24 11.6c1.3.8 1.3 2.1 0 2.9l-5.5 3.9L14 14l4.5-4.5z" fill="#FFD400"/></svg><span><small>Coming soon to</small><strong>Google Play</strong></span></span><a class="btn btn-ghost" href="#shots">See screenshots</a></div>
   </div>
-</footer>
+  <div class="fan" aria-hidden="true"><div class="ph f1"><img src="img/shot-kitchen.webp" width="540" height="960" alt=""></div><div class="ph f2"><img src="img/shot-gulp.webp" width="540" height="960" alt=""></div><div class="ph f3"><img src="img/shot-win.webp" width="540" height="960" alt=""></div></div>
+ </div>
+ <dl class="wrap facts">
+  <div><dt>Genre</dt><dd>Arcade · Casual</dd></div><div><dt>Platform</dt><dd>Android</dd></div><div><dt>Price</dt><dd>Free to play</dd></div><div><dt>Status</dt><dd><span class="dot"></span>Closed testing</dd></div><div><dt>Rating</dt><dd>Teen (13+)</dd></div>
+ </dl>
+</section>
+<nav class="subnav" aria-label="On this page"><div class="wrap"><a href="#play">How it plays</a><a href="#worlds">Worlds</a><a href="#monsters">Monsters</a><a href="#power">Power-ups</a><a href="#shots">Screenshots</a><a href="#faq">FAQ</a></div></nav>
+
+<section class="sec feat" id="play" aria-labelledby="play-h"><div class="wrap feat-in">
+ <div class="feat-art"><div class="blob"></div><div class="ph"><img src="img/shot-midgame.webp" width="540" height="960" alt="The teal monster mouth swallowing a frosted cookie on a red picnic blanket, surrounded by chocolate cookies and a trail of snacks" loading="lazy"></div></div>
+ <div><span class="eyebrow">How it plays</span><h2 id="play-h">A vacuum<br>with teeth.</h2>
+ <p class="big">Get close and your Void pulls food in. Round treats roll toward your mouth, flat ones slide and tip over the lip, and big items get a satisfying chomp, shake and burp.</p>
+ <ol class="fl">
+  <li><b>Follow the chain</b><span>Food is laid out in snaking curves, zigzags, spirals and rings. Ride one chain straight into the next.</span></li>
+  <li><b>Grow into it</b><span>Too big to swallow yet? Shove it around until the goal bar says it fits.</span></li>
+  <li><b>Watch out for bombs</b><span>They come in three sizes and cost you time and size. Steer around them, or grab a Shield.</span></li>
+  <li><b>One finger</b><span>Simple drag controls with adjustable move speed.</span></li>
+ </ol></div>
+</div></section>
+
+<section class="sec alt" id="worlds" aria-labelledby="worlds-h"><div class="wrap">
+ <div class="sec-head"><div><span class="eyebrow" style="color:var(--sun)">Six worlds</span><h2 id="worlds-h">Six worlds to devour.</h2></div><p>Every world is packed with its own things to swallow, from tiny snacks to big stuff you'll need to grow into.</p></div>
+ <ul class="wgrid"><li class="wc"><img src="img/world-picnic.webp" width="480" height="480" alt="The Picnic Blanket world from above, with checkered blankets and trails of snacks on the grass" loading="lazy"><div><span>World 01</span><h3>Picnic Blanket</h3><p>Strawberries, sandwiches and pizza</p></div></li><li class="wc"><img src="img/world-kitchen.webp" width="480" height="480" alt="Monster mouth on a kitchen counter" loading="lazy"><div><span>World 02</span><h3>Kitchen Counter</h3><p>Eggs, forks and cereal boxes</p></div></li><li class="wc"><img src="img/world-sidewalk.webp" width="480" height="480" alt="Monster mouth on a city sidewalk" loading="lazy"><div><span>World 03</span><h3>City Sidewalk</h3><p>Pebbles, crayons and lost keys</p></div></li><li class="wc"><img src="img/world-construction.webp" width="480" height="480" alt="Monster mouth on a construction site with bricks and cones" loading="lazy"><div><span>World 04</span><h3>Construction Site</h3><p>Bolts, bricks and traffic cones</p></div></li><li class="wc"><img src="img/world-garden.webp" width="480" height="480" alt="Monster mouth on a garden patio swallowing flowers" loading="lazy"><div><span>World 05</span><h3>Garden Patio</h3><p>Acorns, snails and garden gnomes</p></div></li><li class="wc"><img src="img/world-bedroom.webp" width="480" height="480" alt="Monster mouth on a bedroom floor with rubber ducks" loading="lazy"><div><span>World 06</span><h3>Kid's Bedroom</h3><p>Marbles, toy cars and rubber ducks</p></div></li></ul>
+</div></section>
+
+<section class="mon" id="monsters" aria-labelledby="mon-h"><div class="wrap mon-in">
+ <div><span class="eyebrow" style="color:var(--pink)">Pick your monster</span><h2 id="mon-h">Unlock the Kraken.</h2>
+  <p class="big">Start as Chomper, then unlock Goofball and Xeno, each with its own lips, teeth and glowing eyes, and paint them in a rainbow of colors. Beat level 10 and the Kraken bursts out of the treasure chest.</p>
+  <ul class="mlist" aria-label="Monsters"><li>Chomper</li><li>Goofball</li><li>Xeno</li><li class="k">Kraken</li></ul>
+  <p class="note">Unlock them with coins you earn by playing.</p></div>
+ <div class="mon-art"><img class="kbg" src="img/kraken-scene.webp" width="720" height="733" alt="The purple, tentacled Kraken monster mouth swallowing a toy car, a rubber duck and donuts on a checkered picnic blanket" loading="lazy"><img class="mm" src="img/monsters-chomper-kraken.webp" width="540" height="270" alt="Chomper, the teal starter monster, next to the purple, tentacled Kraken" loading="lazy"></div>
+</div></section>
+
+<section class="sec" id="power" aria-labelledby="power-h"><div class="wrap">
+ <div class="sec-head"><div><span class="eyebrow" style="color:var(--sky)">Power up</span><h2 id="power-h">Pick up to three<br>for every run.</h2></div></div>
+ <ul class="pgrid"><li class="pc" style="--c:var(--sky)"><img src="img/power-magnet.webp" width="400" height="400" alt="" loading="lazy"><h3>Snack Snag</h3><p>Pull food in from farther away.</p></li><li class="pc" style="--c:var(--lime)"><img src="img/power-grow.webp" width="400" height="400" alt="" loading="lazy"><h3>Belly Boost</h3><p>An instant size boost.</p></li><li class="pc" style="--c:var(--sun)"><img src="img/power-time.webp" width="400" height="400" alt="" loading="lazy"><h3>Snack Time</h3><p>Extra seconds on the clock.</p></li><li class="pc" style="--c:var(--violet2)"><img src="img/power-shield.webp" width="400" height="400" alt="" loading="lazy"><h3>Shield</h3><p>Bombs bounce off for 10 seconds.</p></li></ul>
+</div></section>
+
+<section aria-labelledby="fair-h"><div class="wrap"><div class="fair-card">
+ <div class="fair-badge" aria-hidden="true">FAIR<br>PLAY</div>
+ <div><h2 id="fair-h">Fair and free to play.</h2><p>Every level can be beaten without paying. Lives refill on their own over time, one every 5 minutes, and winning a level never costs a life. Earn coins as you play, then spend them on new monsters, colors and power-ups.</p></div>
+</div></div></section>
+
+<section class="sec shots" id="shots" aria-labelledby="shots-h"><div class="wrap"><div class="sec-head"><div><span class="eyebrow">Screenshots</span><h2 id="shots-h">See it in action.</h2></div><p>Swipe or scroll sideways to see more.</p></div></div>
+ <ul class="strip" tabindex="0" aria-label="Screenshots, scroll sideways"><li><figure><div class="ph"><img src="img/shot-title.webp" width="540" height="960" alt="Void Chomp title screen with the lime logo, a Start button, and a purple tentacled monster mouth" loading="lazy"></div><figcaption>Title</figcaption></figure></li><li><figure><div class="ph"><img src="img/shot-gulp.webp" width="540" height="960" alt="A teal monster mouth mid-gulp on a picnic blanket, with a cookie crumb inside" loading="lazy"></div><figcaption>Mid-gulp</figcaption></figure></li><li><figure><div class="ph"><img src="img/shot-midgame.webp" width="540" height="960" alt="The teal monster mouth swallowing a frosted cookie on a picnic blanket" loading="lazy"></div><figcaption>Snack chain</figcaption></figure></li><li><figure><div class="ph"><img src="img/shot-overview.webp" width="540" height="960" alt="Top-down view of the Picnic Blanket world, with checkered blankets, snack trails and red bomb zones on the grass" loading="lazy"></div><figcaption>Picnic world</figcaption></figure></li><li><figure><div class="ph"><img src="img/shot-kitchen.webp" width="540" height="960" alt="The teal monster mouth on a wooden kitchen counter, swallowing a swirl of green pasta" loading="lazy"></div><figcaption>Kitchen Counter</figcaption></figure></li><li><figure><div class="ph"><img src="img/shot-garden.webp" width="540" height="960" alt="The teal monster mouth on a garden path, pulling in acorns" loading="lazy"></div><figcaption>Garden Patio</figcaption></figure></li><li><figure><div class="ph"><img src="img/shot-bedroom.webp" width="540" height="960" alt="The teal monster mouth on a bedroom floor, swallowing dice next to a blue marble" loading="lazy"></div><figcaption>Kid's Bedroom</figcaption></figure></li><li><figure><div class="ph"><img src="img/shot-win.webp" width="540" height="960" alt="Level complete screen with a three-star burst, confetti and bonus coins" loading="lazy"></div><figcaption>Level complete</figcaption></figure></li></ul>
+</section>
+
+<section class="sec" id="faq" aria-labelledby="faq-h" style="padding-top:20px"><div class="wrap faq-in">
+ <div><span class="eyebrow">FAQ</span><h2 id="faq-h">Questions?</h2><p class="big inline">Still stuck? Email <a href="mailto:GuinnGaming87@gmail.com">GuinnGaming87@gmail.com</a> and we'll help.</p></div>
+ <div class="qs">
+  <details open><summary>Is Void Chomp free?</summary><p>Yes. It's free to play, and every level can be beaten without paying.</p></details>
+  <details><summary>When can I play it?</summary><p>Void Chomp is in closed testing on Google Play now and is coming soon to Android. Want to help test it? <a href="mailto:GuinnGaming87@gmail.com?subject=Void%20Chomp%20testing">Email us</a>.</p></details>
+  <details><summary>Which devices does it run on?</summary><p>Android phones, through Google Play.</p></details>
+  <details><summary>How is my data handled?</summary><p>Read the <a href="privacy/">Void Chomp privacy policy</a> for what the game collects and why.</p></details>
+ </div>
+</div></section>
+<section class="sec alt" aria-labelledby="more-h"><div class="wrap"><div class="sec-head"><div><span class="eyebrow">More from GuinnGaming</span><h2 id="more-h">Keep snacking.</h2></div><a class="lnk" href="../#games">All games →</a></div><div class="mgrid"><a class="mc" href="../squishy/"><img src="../squishy/img/feature.webp" width="1024" height="500" alt="" loading="lazy"><div><img class="mi" src="../squishy/img/icon.webp" width="56" height="56" alt="" loading="lazy"><span><b>Squishy: Full of Snacks</b><small>Closed testing · coming soon</small></span></div></a><a class="mc" href="../dent-collector/"><img src="../assets/img/dent-collector-feature.webp" width="1024" height="500" alt="" loading="lazy"><div><img class="mi" src="../assets/img/dent-collector-icon.webp" width="56" height="56" alt="" loading="lazy"><span><b>Dent Collector</b><small>In development</small></span></div></a></div></div></section>
+</main>
+<footer><div class="wrap">
+<div class="fgrid">
+ <div><a class="logo" href="../" aria-label="GuinnGaming home"><img src="../assets/img/gg-wordmark-mark.png" alt="" width="48" height="22"><span>Guinn<b>Gaming</b></span></a>
+  <p>An independent game studio making colorful, fair-to-play games. Small studio, big appetite.</p>
+  <div class="soc"><a class="icon-btn" href="https://www.youtube.com/@GuinnGaming" rel="noopener" aria-label="GuinnGaming on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.7 15V9l5.8 3z"/></svg></a></div></div>
+ <nav aria-label="Footer games"><h2>Games</h2><ul><li><a href="../void-chomp/">Void Chomp</a></li><li><a href="../squishy/">Squishy: Full of Snacks</a></li><li><a href="../dent-collector/">Dent Collector</a></li></ul></nav>
+ <nav aria-label="Footer studio"><h2>Studio</h2><ul><li><a href="../news/">News</a></li><li><a href="../#studio">About</a></li><li><a href="../store/">Merch store</a></li><li><a href="https://www.youtube.com/@GuinnGaming" rel="noopener">YouTube</a></li></ul></nav>
+ <nav aria-label="Footer contact"><h2>Contact</h2><ul><li><a href="mailto:GuinnGaming87@gmail.com">GuinnGaming87@gmail.com</a></li><li><a href="../#contact">Help, bugs &amp; press</a></li></ul></nav>
+ <nav aria-label="Footer legal"><h2>Legal</h2><ul><li><a href="../void-chomp/privacy/">Void Chomp privacy</a></li><li><a href="../squishy/privacy/">Squishy privacy</a></li><li><a href="../dent-collector/privacy/">Dent Collector privacy</a></li><li><a href="../terms/">Terms of Service</a></li></ul></nav>
+</div>
+<p class="fbig" aria-hidden="true">Small studio,<br>big appetite.</p>
+<div class="flegal"><span>&copy; 2026 GuinnGaming</span><span>This website sets no cookies and uses no analytics or ad trackers.</span></div>
+</div></footer>
 </body>
 </html>

@@ -1,13 +1,21 @@
 # GuinnGaming website
 
-Plain HTML + CSS for the GuinnGaming studio site. No build step, no JavaScript, no cookies, analytics or trackers.
-Fonts (Creepster for logos, Nunito for text) load from Google Fonts.
+Plain HTML + CSS for the GuinnGaming studio site. No build step, no cookies, analytics or trackers, and no JavaScript
+(except the tiny redirect scripts on the old Fill The Void / Pocket Munch addresses).
+
+**2026-11 redesign:** all pages use `assets/css/site.css` (dark ink + violet glow, lime for buttons and status,
+per-game accent colours). Fonts are self-hosted in `assets/fonts/` (Bricolage Grotesque for headings, Inter for
+text, both SIL OFL 1.1, licence files alongside), so the site makes no third-party requests. The mobile menu is a
+plain `<details>` element. On privacy and Terms pages, only the header/footer changed: the `<main>` legal text
+is byte-for-byte what it was. `assets/css/style.css` is the old stylesheet, kept for `_template/` only.
 
 ## What's here
 
 | Path | Page |
 |---|---|
-| `index.html` | Studio home: hero, **Our games** grid, About, Contact |
+| `index.html` | Studio home: hero, **Our games** grid, Dent Collector series, News, Merch, Studio/Contact |
+| `news/index.html` | Studio news (real updates only; add new posts at the top) |
+| `dent-collector/index.html` | Dent Collector game page (in development) |
 | `void-chomp/index.html` | Void Chomp: Hole Lotta Snacks game page |
 | `void-chomp/privacy/index.html` | Void Chomp privacy policy (the URL to give Play Console) |
 | `dent-collector/privacy/index.html` | Dent Collector privacy policy (the URL to give Play Console for that game) |
@@ -17,7 +25,9 @@ Fonts (Creepster for logos, Nunito for text) load from Google Fonts.
 | `terms/index.html` | Studio Terms of Service (the URL to give Play Console for the trader / app content declaration) |
 | `store/index.html` | Merch Store tab: links out to the Fourthwall shop (guinngaming-shop.fourthwall.com); no JS, no embeds, no trackers |
 | `404.html` | Not-found page (GitHub Pages serves it automatically) |
-| `assets/css/style.css` | Shared styles for every page |
+| `assets/css/site.css` | Shared styles for every page (2026-11 redesign) |
+| `assets/css/style.css` | Old stylesheet, used only by `_template/` |
+| `assets/fonts/` | Self-hosted WOFF2 fonts + OFL licences |
 | `assets/img/` | Favicon, touch icon, game icons |
 | `void-chomp/img/` | Void Chomp screenshots (WebP) |
 | `squishy/img/` | Squishy icon, key art and screenshots (WebP) |
