@@ -380,3 +380,7 @@ footer{background:#07070D;border-top:1px solid var(--line);padding:90px 0 40px}
 .err p{color:var(--muted);font-size:20px;margin:10px 0 30px}
 .err .row{justify-content:center}
 @media (max-width:640px){.err h1{font-size:80px}.prose .game-icon{width:60px;height:60px;border-radius:14px}}
+@media (max-width:1180px){.navr>.icon-btn{display:none}}
+.fgrid{grid-template-columns:1.5fr 1fr 1fr 1fr 1fr 1fr;gap:32px}
+@media (max-width:1100px){.fgrid{grid-template-columns:1fr 1fr 1fr}}
+@media (max-width:640px){.fgrid{grid-template-columns:1fr 1fr}}
